@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color:black;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 200px ;
+
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #0B3D91;
+}
+
+section {
+    padding:100px 200px;
+}
+
+.main{
+    color: white;
+    width:100% ;
+    min-height: 100vh;
+    /* 100% off screen view */
+    display: flex;
+    align-items: center;
+    background: url('images/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.main h2{
+    color: white;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #196bfa;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.main h3{
+    color: white;
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.main-btn{
+    color: white;
+    background-color: #196bfa ;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em ;
+    font-weight:700;
+    padding: 0.9372em 2.1em;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition:0.7s ease;
+
+}
+
+.main-btn:hover{
+    background-color:#0B3D91;
+    transform: scale(1.1);
+    
+}
+
+.social-media a{
+    color: white;
+    padding-right: 30px;
+    font-size: 1.7em;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #0B3D91;
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 2.2em;
+}
+
+.content{
+   display: flex; 
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.card{
+    background-color:white;
+    min-height: 14em;
+    min-width: 23em;
+    width: 21.25em;
+    box-shadow:0 5px 20px rgba(1,1,1,0.3);
+    border-radius: 5px;
+    padding: 25px;
+    margin: 10px;
+    transition:0.7s ease;
+}
+
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: #0B3D91;
+    font-size: 6em;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.info h3{
+    color: #0B3D91;
+    margin-bottom:10px;
+}
+
+.info{
+    text-align: center;
+}
+
+
+.projects h2{
+    color: white;
+}
+
+.projects{
+    background-color:#061f49;
+}
+
+.projects.content{
+    margin-top:20px;
+}
+.project-card{
+    background-color: white;
+    border: 1px solid #fff;
+    min-height: 14em;
+    min-width: 23em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 15px;
+    transition:0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image{
+    opacity: 0.9;
+} 
+
+.project-image img{
+    width: 100%;
+}
+
+.project-info{
+    padding: 1em;
+
+
+}
+.project-catogery{
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+.more-detaill{
+    text-decoration: none;
+    color:#061f49;
+    font-weight: 400;
+
+}
+
+.more-detaill:hover{
+    color:#051838;
+
+}
+
+.cards-contact .icon{
+    font-size: 4.5em;
+}
+.cards-contact .p{
+    font-size: 1.5em;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.footer p span{
+    color:#061f49;
+    font-weight:800;
+}
+
+
+@media(max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation{
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+
+    .main{
+       text-align: center;
+    }
+
+    .project-card{
+        min-width:18em;
+    }
+    .card{
+        min-width:18em;
+    }
+    .footer{
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer p{
+        text-align: center;
+        margin-top: 10px
+    }
+    .footer .social-media a{
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
